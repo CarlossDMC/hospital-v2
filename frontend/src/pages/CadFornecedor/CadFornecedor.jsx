@@ -119,7 +119,7 @@ export default function CadFornecedor() {
         },
     ];
 
-    const endpoint = "http://localhost:8000/fornecedor";
+    const endpoint = "http://localhost:8080/fornecedor";
     const successPath = "/PesFornecedor";
 
     return (

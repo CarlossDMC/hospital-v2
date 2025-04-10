@@ -136,7 +136,7 @@ export default function CadMedico() {
         },
     ];
 
-    const endpoint = "http://localhost:8000/medico"; // Ajuste o endpoint real da sua API
+    const endpoint = "http://localhost:8080/medico"; // Ajuste o endpoint real da sua API
     const successPath = "/PesMedico"; // Ajuste a rota de sucesso após o cadastro
 
     return (

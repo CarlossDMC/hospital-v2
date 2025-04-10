@@ -4,7 +4,7 @@ import GenericSearch from "../../components/GenericSearch/GenericSearch.jsx";
 export default function PesAcompanhante() {
     const searchFields = [
         { name: "nome", label: "Nome", type: "text", placeholder: "Digite o nome do acompanhante" },
-        { name: "grau_Parentesco", label: "Relação", type: "text", placeholder: "Digite a relação" },
+        { name: "grau_parentesco", label: "Relação", type: "text", placeholder: "Digite a relação" },
         { name: "fone", label: "Contato", type: "text", placeholder: "Digite o contato" },
     ];
 
@@ -16,7 +16,7 @@ export default function PesAcompanhante() {
         { header: "Email", accessor: "email" },
     ];
 
-    const endpoint = "http://localhost:8000/acompanhante";
+    const endpoint = "http://localhost:8080/acompanhante";
     const registerPath = "/CadAcompanhante";
 
     return (

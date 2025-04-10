@@ -28,7 +28,7 @@ export default function PesFornecedor() {
         { header: "Contato", accessor: "contato", width: "150px" },
     ];
 
-    const endpoint = "http://localhost:8000/fornecedor";
+    const endpoint = "http://localhost:8080/fornecedor";
     const registerPath = "/CadFornecedor";
 
     return (

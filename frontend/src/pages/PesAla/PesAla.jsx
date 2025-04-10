@@ -16,7 +16,7 @@ export default function PesAla() {
         { header: "Status", accessor: "status" },
     ];
 
-    const endpoint = "http://localhost:8000/ala";
+    const endpoint = "http://localhost:8080/ala";
     const registerPath = "/CadAla";
 
     return (

@@ -15,7 +15,7 @@ export default function PesFarmaceutico() {
         { header: "Email", accessor: "email" },
     ];
 
-    const endpoint = "http://localhost:8000/farmaceutico";
+    const endpoint = "http://localhost:8080/farmaceutico";
     const registerPath = "/CadFarmaceutico";
 
     return (

@@ -43,7 +43,7 @@ app.whenReady().then(() => {
         'Content-Security-Policy': [
           "default-src 'self' data:; " +
           "script-src 'self' 'unsafe-inline' 'unsafe-eval'; " +
-          "connect-src 'self' https://viacep.com.br http://localhost:8000; " +
+          "connect-src 'self' https://viacep.com.br http://localhost:8080; " +
           "img-src 'self' data:; " +
           "style-src 'self' 'unsafe-inline';"
         ]

@@ -67,7 +67,7 @@ export default function CadAcompanhante() {
         },
     ];
 
-    const endpoint = "http://localhost:8000/acompanhante";
+    const endpoint = "http://localhost:8080/acompanhante";
     const successPath = "/PesAcompanhante";
 
     return (

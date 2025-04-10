@@ -15,7 +15,7 @@ export default function PesEnfermeiro() {
         { header: "Email", accessor: "email" },
     ];
 
-    const endpoint = "http://localhost:8000/enfermeiro";
+    const endpoint = "http://localhost:8080/enfermeiro";
     const registerPath = "/CadEnfermeiro";
 
     return (

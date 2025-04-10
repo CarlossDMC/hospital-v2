@@ -7,7 +7,7 @@ export default function CadQuarto() {
     const [alas, setAlas] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:8000/ala")
+        fetch("http://localhost:8080/ala")
             .then((res) => res.json())
             .then((data) => setAlas(data));
     }, []);
@@ -19,6 +19,6 @@ export default function CadQuarto() {
     ];
 
     return (
-        <GenericRegister fields={registerFields} endpoint="http://localhost:8000/quarto" successPath="/PesQuarto" id={id || 0} entidade={"Quarto"} />
+        <GenericRegister fields={registerFields} endpoint="http://localhost:8080/quarto" successPath="/PesQuarto" id={id || 0} entidade={"Quarto"} />
     );
 }

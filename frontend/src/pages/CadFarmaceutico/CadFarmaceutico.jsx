@@ -135,7 +135,7 @@ export default function CadFarmaceutico() {
         },
     ];
 
-    const endpoint = "http://localhost:8000/farmaceutico";
+    const endpoint = "http://localhost:8080/farmaceutico";
     const successPath = "/PesFarmaceutico";
 
     return (

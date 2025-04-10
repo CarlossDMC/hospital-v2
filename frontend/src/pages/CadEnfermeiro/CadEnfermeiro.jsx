@@ -135,7 +135,7 @@ export default function CadEnfermeiro() {
         },
     ];
 
-    const endpoint = "http://localhost:8000/enfermeiro";
+    const endpoint = "http://localhost:8080/enfermeiro";
     const successPath = "/PesEnfermeiro";
 
     return (

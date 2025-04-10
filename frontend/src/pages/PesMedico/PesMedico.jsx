@@ -14,7 +14,7 @@ export default function PesMedico() {
         { header: "Fone 1", accessor: "fone1" },
     ];
 
-    const endpoint = "http://localhost:8000/medico";
+    const endpoint = "http://localhost:8080/medico";
     const registerPath = "/CadMedico";
 
     return (

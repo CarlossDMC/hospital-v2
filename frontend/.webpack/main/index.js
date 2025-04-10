@@ -966,7 +966,7 @@ const createWindow = () => {
     height: 720,
     icon: iconPath,
     webPreferences: {
-      preload: '/Users/lorenzo_uliano/Documents/ifsc/hospital-v2/frontend/.webpack/renderer/main_window/preload.js'
+      preload: '/Users/carlosdanielmachadocosta/Documents/Projetos/hospital-spring-electron/hospital/frontend/.webpack/renderer/main_window/preload.js'
     },
     autoHideMenuBar: true // Esconde a barra de menu, mas mantém os botões de controle
   });
@@ -990,7 +990,7 @@ app.whenReady().then(() => {
     callback({
       responseHeaders: {
         ...details.responseHeaders,
-        'Content-Security-Policy': ["default-src 'self' data:; " + "script-src 'self' 'unsafe-inline' 'unsafe-eval'; " + "connect-src 'self' https://viacep.com.br http://localhost:8000; " + "img-src 'self' data:; " + "style-src 'self' 'unsafe-inline';"]
+        'Content-Security-Policy': ["default-src 'self' data:; " + "script-src 'self' 'unsafe-inline' 'unsafe-eval'; " + "connect-src 'self' https://viacep.com.br http://localhost:8080; " + "img-src 'self' data:; " + "style-src 'self' 'unsafe-inline';"]
       }
     });
   });

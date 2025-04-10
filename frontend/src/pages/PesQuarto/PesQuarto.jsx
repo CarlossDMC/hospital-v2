@@ -17,7 +17,7 @@ export default function PesQuarto() {
         { header: "Ala", accessor: "alaDescricao" }
     ];
 
-    const endpoint = "http://localhost:8000/quarto";
+    const endpoint = "http://localhost:8080/quarto";
     const registerPath = "/CadQuarto";
 
     return (

@@ -14,7 +14,7 @@ export default function PesUsuario() {
         { header: "Fone", accessor: "fone1" },
     ];
 
-    const endpoint = "http://localhost:8000/usuario";
+    const endpoint = "http://localhost:8080/usuario";
     const registerPath = "/CadUsuario";
 
     return (

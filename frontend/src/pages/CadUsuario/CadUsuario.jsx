@@ -127,7 +127,7 @@ export default function CadUsuario() {
         },
     ];
 
-    const endpoint = "http://localhost:8000/usuario";
+    const endpoint = "http://localhost:8080/usuario";
     const successPath = "/PesUsuario";
 
     return (

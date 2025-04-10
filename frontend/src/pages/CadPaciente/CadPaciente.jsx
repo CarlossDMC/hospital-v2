@@ -151,7 +151,7 @@ export default function CadPaciente() {
         }
     ];
 
-    const endpoint = "http://localhost:8000/paciente";
+    const endpoint = "http://localhost:8080/paciente";
     const successPath = "/PesPaciente";
 
     return (
