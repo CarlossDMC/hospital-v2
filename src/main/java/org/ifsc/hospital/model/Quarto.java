@@ -4,11 +4,12 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.experimental.SuperBuilder;
 
 @Getter
 @Setter
@@ -22,6 +23,9 @@ public class Quarto {
     private Long id;
     private String descricao;
     private String status;
-    private Integer alaId;
+
+    @ManyToOne
+    @JoinColumn(name = "ala_id")
+    private Ala ala;
 
 }

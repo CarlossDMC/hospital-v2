@@ -68,8 +68,10 @@ export default function App() {
                         <Route path={"/CadFornecedor"} element={<CadFornecedor />} />
                         <Route path={"/CadFornecedor/:id"} element={<CadFornecedor />} />
                         <Route path={"/CadAla"} element={<CadAla />} />
+                        <Route path={"/CadAla/:id"} element={<CadAla />} />
                         <Route path={"/PesAla"} element={<PesAla />} />
                         <Route path={"/CadQuarto"} element={<CadQuarto />} />
+                        <Route path={"/CadQuarto/:id"} element={<CadQuarto />} />
                         <Route path={"/PesQuarto"} element={<PesQuarto />} />
                     </Routes>
 

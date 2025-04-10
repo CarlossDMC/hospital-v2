@@ -52,15 +52,15 @@ export default function SideBar() {
                 { name: "Fornecedor", path: "/PesFornecedor", icon: <FaUserNinja /> }
             ],
         },
-        // {
-        //     name: "Alas",
-        //     icon: <LiaHospital />,
-        //     subItems: [
-        //         { name: "Ala", path: "/PesAla", icon: <FaHouse /> },
-        //         { name: "Quarto", path: "/PesQuarto", icon: <MdMeetingRoom /> },
-        //         // { name: "Leito", path: "/PesLeito", icon: <FaBed /> }
-        //     ]
-        // },
+        {
+            name: "Alas",
+            icon: <LiaHospital />,
+            subItems: [
+                { name: "Ala", path: "/PesAla", icon: <FaHouse /> },
+                { name: "Quarto", path: "/PesQuarto", icon: <MdMeetingRoom /> },
+                // { name: "Leito", path: "/PesLeito", icon: <FaBed /> }
+            ]
+        },
         // {
         //     name: "Laboratório & Medicamentos",
         //     icon: <FaFlask />,

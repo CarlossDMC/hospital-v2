@@ -14,7 +14,11 @@ export default function PesQuarto() {
         { header: "ID", accessor: "id" },
         { header: "Descrição", accessor: "descricao" },
         { header: "Status", accessor: "status" },
-        { header: "Ala", accessor: "alaDescricao" }
+        {
+            header: "Ala",
+            accessor: "ala", 
+            cell: (row) => row.ala?.descricao || "--"
+        }
     ];
 
     const endpoint = "http://localhost:8080/quarto";
