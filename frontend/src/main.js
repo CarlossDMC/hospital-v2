@@ -1,5 +1,7 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('node:path');
+const { session } = require('electron');
+const iconPath = path.join(app.getAppPath(), 'assets', 'icone.ico');
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) {
@@ -11,14 +13,16 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 1280,
     height: 720,
+    icon: iconPath,
     webPreferences: {
       preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
     },
-    autoHideMenuBar: true,
+    autoHideMenuBar: true, // Esconde a barra de menu, mas mantém os botões de controle
   });
-
   // and load the index.html of the app.
   mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY);
+
+  mainWindow.maximize();
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
@@ -32,6 +36,22 @@ app.whenReady().then(() => {
 
   // On OS X it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
+  session.defaultSession.webRequest.onHeadersReceived((details, callback) => {
+    callback({
+      responseHeaders: {
+        ...details.responseHeaders,
+        'Content-Security-Policy': [
+          "default-src 'self' data:; " +
+          "script-src 'self' 'unsafe-inline' 'unsafe-eval'; " +
+          "connect-src 'self' https://viacep.com.br http://localhost:8000; " +
+          "img-src 'self' data:; " +
+          "style-src 'self' 'unsafe-inline';"
+        ]
+      }
+    });
+  });
+
+
   app.on('activate', () => {
     if (BrowserWindow.getAllWindows().length === 0) {
       createWindow();
