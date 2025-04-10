@@ -11,7 +11,7 @@ export default function PesFarmaceutico() {
         { header: "ID", accessor: "id" },
         { header: "Nome", accessor: "nome" },
         { header: "Número da Licença", accessor: "cfr" },
-        { header: "Telefone", accessor: "fone" },
+        { header: "Telefone", accessor: "fone1" },
         { header: "Email", accessor: "email" },
     ];
 

@@ -38,4 +38,8 @@ public class Enfermeiro {
     private String cpf;
     private String fone;
     private String status;
+    private String cre;
+    private String login;
+    private String senha;
+    private String nomeSocial;
 }
